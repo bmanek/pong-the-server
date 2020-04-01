@@ -1,15 +1,15 @@
 import React from 'react'
+import TeamField from './TeamField'
 
-class App extends React.Component {
-  state = { resource: "posts"}
+const App = () => {
 
-  render() {
     return (
       <div>
-        Welcome to the Thunderdome
+        <h2>Welcome to the Thunderdome</h2>
+        <TeamField />
+        <TeamField />
       </div>
     )
-  }
 }
 
 export default App

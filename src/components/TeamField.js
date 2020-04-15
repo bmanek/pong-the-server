@@ -3,12 +3,12 @@ import Roster from './Roster';
 import Arrangement from './Arrangement';
 import Discard from './Discard';
 
-const TeamField = () => {
+const TeamField = (props) => {
 
     return (
       <div className="ui text container">
         <Roster />
-        <Arrangement />
+        <Arrangement rack={props.rack} />
         <Discard />
       </div>
     )

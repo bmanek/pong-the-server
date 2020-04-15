@@ -1,12 +1,30 @@
 import React from 'react'
 
-const Arrangement = () => {
+const Arrangement = (props) => {
 
-    return (
-      <div>
-        Arrangement
-      </div>
-    )
+  const styling = () => {
+    switch (props.rack) {
+      case 'target':
+        return (
+          <div>
+            {"This is your enemy"}
+          </div>
+        )
+
+      case 'base':
+        return (
+          <div>
+            {"This is you"}
+          </div>
+        )
+    }
+  }
+
+  return (
+    <div>
+      {styling()}
+    </div>
+  )
 }
 
 export default Arrangement

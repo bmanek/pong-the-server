@@ -8,16 +8,16 @@ const Arrangement = (props) => {
         return (
           <div>
             <div className="backrow">
-              <i className="huge middle aligned icon trash" />
-              <i className="huge middle aligned icon trash" />
-              <i className="huge middle aligned icon trash" />
+              <i className="huge middle aligned red icon trash" />
+              <i className="huge middle aligned red icon trash" />
+              <i className="huge middle aligned red icon trash" />
             </div>
             <div className="midrow">
-              <i className="huge middle aligned icon trash" />
-              <i className="huge middle aligned icon trash" />
+              <i className="huge middle aligned red icon trash" />
+              <i className="huge middle aligned red icon trash" />
             </div>
             <div className="frontrow">
-              <i className="huge middle aligned icon trash" />
+              <i className="huge middle aligned red icon trash" />
             </div>
           </div>
         )
@@ -25,16 +25,16 @@ const Arrangement = (props) => {
         return (
           <div>
             <div className="backrow">
-              <i className="huge middle aligned icon trash" />
+              <i className="huge middle aligned red icon trash" />
             </div>
             <div className="midrow">
-              <i className="huge middle aligned icon trash" />
-              <i className="huge middle aligned icon trash" />
+              <i className="huge middle aligned red icon trash" />
+              <i className="huge middle aligned red icon trash" />
             </div>
             <div className="frontrow">
-              <i className="huge middle aligned icon trash" />
-              <i className="huge middle aligned icon trash" />
-              <i className="huge middle aligned icon trash" />
+              <i className="huge middle aligned red icon trash" />
+              <i className="huge middle aligned red icon trash" />
+              <i className="huge middle aligned red icon trash" />
             </div>
           </div>
         )

@@ -6,7 +6,7 @@ import Discard from './Discard';
 const TeamField = (props) => {
 
     return (
-      <div className="ui text container">
+      <div className="ui center aligned three column grid container">
         <Roster />
         <Arrangement rack={props.rack} />
         <Discard />

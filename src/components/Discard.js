@@ -4,7 +4,7 @@ const Discard = () => {
 
     return (
       <div>
-        Discard
+        <h3>Discard</h3>
       </div>
     )
 }

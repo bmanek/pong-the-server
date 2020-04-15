@@ -4,7 +4,7 @@ const Roster = () => {
 
     return (
       <div>
-        Roster
+        <h3>Roster</h3>
       </div>
     )
 }

@@ -5,7 +5,7 @@ const App = () => {
 
     return (
       <div>
-        <h2>Welcome to the Thunderdome</h2>
+        <h2 className="ui aligned center header">Welcome to the Thunderdome</h2>
         <TeamField rack="target"/>
         <TeamField rack="base"/>
       </div>

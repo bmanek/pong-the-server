@@ -7,14 +7,35 @@ const Arrangement = (props) => {
       case 'target':
         return (
           <div>
-            {"This is your enemy"}
+            <div className="backrow">
+              <i className="huge middle aligned icon trash" />
+              <i className="huge middle aligned icon trash" />
+              <i className="huge middle aligned icon trash" />
+            </div>
+            <div className="midrow">
+              <i className="huge middle aligned icon trash" />
+              <i className="huge middle aligned icon trash" />
+            </div>
+            <div className="frontrow">
+              <i className="huge middle aligned icon trash" />
+            </div>
           </div>
         )
-
       case 'base':
         return (
           <div>
-            {"This is you"}
+            <div className="backrow">
+              <i className="huge middle aligned icon trash" />
+            </div>
+            <div className="midrow">
+              <i className="huge middle aligned icon trash" />
+              <i className="huge middle aligned icon trash" />
+            </div>
+            <div className="frontrow">
+              <i className="huge middle aligned icon trash" />
+              <i className="huge middle aligned icon trash" />
+              <i className="huge middle aligned icon trash" />
+            </div>
           </div>
         )
     }

@@ -1,4 +1,5 @@
 import React from 'react'
+import Cup from './Cup'
 
 const Arrangement = (props) => {
 
@@ -8,16 +9,18 @@ const Arrangement = (props) => {
         return (
           <div>
             <div className="backrow">
-              <i className="huge middle aligned red icon trash" />
-              <i className="huge middle aligned red icon trash" />
-              <i className="huge middle aligned red icon trash" />
+              <Cup />
+              <Cup />
+              <Cup />
             </div>
             <div className="midrow">
-              <i className="huge middle aligned red icon trash" />
-              <i className="huge middle aligned red icon trash" />
+              <div>
+                <Cup />
+                <Cup />
+              </div>
             </div>
             <div className="frontrow">
-              <i className="huge middle aligned red icon trash" />
+              <Cup />
             </div>
           </div>
         )
@@ -25,16 +28,16 @@ const Arrangement = (props) => {
         return (
           <div>
             <div className="backrow">
-              <i className="huge middle aligned red icon trash" />
+              <i className="huge middle aligned blue icon trash" />
             </div>
             <div className="midrow">
-              <i className="huge middle aligned red icon trash" />
-              <i className="huge middle aligned red icon trash" />
+              <i className="huge middle aligned blue icon trash" />
+              <i className="huge middle aligned blue icon trash" />
             </div>
             <div className="frontrow">
-              <i className="huge middle aligned red icon trash" />
-              <i className="huge middle aligned red icon trash" />
-              <i className="huge middle aligned red icon trash" />
+              <i className="huge middle aligned blue icon trash" />
+              <i className="huge middle aligned blue icon trash" />
+              <i className="huge middle aligned blue icon trash" />
             </div>
           </div>
         )

@@ -9,18 +9,16 @@ const Arrangement = (props) => {
         return (
           <div>
             <div className="backrow">
-              <Cup />
-              <Cup />
-              <Cup />
+              <Cup color={"red"}/>
+              <Cup color={"red"}/>
+              <Cup color={"red"}/>
             </div>
             <div className="midrow">
-              <div>
-                <Cup />
-                <Cup />
-              </div>
+              <Cup color={"red"}/>
+              <Cup color={"red"}/>
             </div>
             <div className="frontrow">
-              <Cup />
+              <Cup color={"red"}/>
             </div>
           </div>
         )
@@ -28,16 +26,16 @@ const Arrangement = (props) => {
         return (
           <div>
             <div className="backrow">
-              <i className="huge middle aligned blue icon trash" />
+              <Cup color={"blue"}/>
             </div>
             <div className="midrow">
-              <i className="huge middle aligned blue icon trash" />
-              <i className="huge middle aligned blue icon trash" />
+              <Cup color={"blue"}/>
+              <Cup color={"blue"}/>
             </div>
             <div className="frontrow">
-              <i className="huge middle aligned blue icon trash" />
-              <i className="huge middle aligned blue icon trash" />
-              <i className="huge middle aligned blue icon trash" />
+              <Cup color={"blue"}/>
+              <Cup color={"blue"}/>
+              <Cup color={"blue"}/>
             </div>
           </div>
         )

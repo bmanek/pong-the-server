@@ -4,7 +4,7 @@ const Cup = (props) => {
 
     return (
       <React.Fragment>
-        <i className="huge middle aligned red icon trash" />
+        <i className={`huge middle aligned ${props.color} icon trash`} />
       </React.Fragment>
     )
 }

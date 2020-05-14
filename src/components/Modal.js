@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { setTeam } from '../actions'
 
 class Modal extends React.Component {
 
   selectTeam = (team) => {
-    console.log("clicked " + team)
+    setTeam(team)
   }
 
   render() {

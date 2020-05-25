@@ -39,6 +39,8 @@ const Arrangement = (props) => {
             </div>
           </div>
         )
+      default:
+        return "hi!"
     }
   }
 

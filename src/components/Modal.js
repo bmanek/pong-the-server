@@ -6,16 +6,15 @@ import { setTeam } from '../actions'
 class Modal extends React.Component {
 
   selectTeam = (team) => {
-    console.log(team, "from selectTeam")
-    setTeam(team)
+    this.props.dispatch(setTeam(team))
   }
 
   render() {
     return ReactDOM.createPortal(
       <div className="ui dimmer modals visible active">
         <div className="ui standard modal visible active">
-          <h1 className="middle">Select a Team:</h1>
-          <div className="aligned center actions">
+          <h1>Select a Team:</h1>
+          <div className="actions">
             <button onClick={() => this.selectTeam("red")}
               alt="red" className="ui big red button">Red</button>
             <button onClick={() => this.selectTeam("blue")}
@@ -28,11 +27,14 @@ class Modal extends React.Component {
   }
 }
 
+export default connect()(Modal)
 
-const mapStateToProps = (state) => {
-  console.log(state, "in mapStateToProps")
-  return { team: state.teamDetails }
-}
+//PREVIOUS mapStateToProps(), connect()
 
-export default connect(mapStateToProps,
-  { setTeam })(Modal)
+// const mapStateToProps = (state) => {
+//   console.log(state)
+//   return { team: state.testTeam }
+// }
+
+// export default connect(mapStateToProps,
+//   { setTeam })(Modal)

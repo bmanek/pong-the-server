@@ -18,7 +18,6 @@ const INITIAL_STATE = {
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case SET_TEAM:
-      console.log("from the reducer")
       return { ...state, team: action.payload }
     default:
       return state

@@ -11,7 +11,7 @@ const App = () => {
         <h2 className="ui aligned center header">Welcome to the Thunderdome</h2>
         <br />
         <br />
-        <TeamField rack="target"/>
+        <TeamField rack="target" color="!team"/>
         <br />
         <br />
         <br />
@@ -20,7 +20,7 @@ const App = () => {
         <br />
         <br />
         <br />
-        <TeamField rack="base"/>
+        <TeamField rack="base" color="team"/>
       </div>
     )
 }

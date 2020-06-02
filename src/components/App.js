@@ -1,26 +1,12 @@
 import React from 'react'
 import Modal from './Modal'
-import TeamField from './TeamField'
+import BigView from './BigView'
 
 const App = () => {
-
     return (
       <div>
         <Modal />
-        <br />
-        <h2 className="ui aligned center header">Welcome to the Thunderdome</h2>
-        <br />
-        <br />
-        <TeamField rack="target" color="!team"/>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <TeamField rack="base" color="team"/>
+        <BigView />
       </div>
     )
 }

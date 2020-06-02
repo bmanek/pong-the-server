@@ -21,7 +21,7 @@ export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case SET_TEAM:
       return { ...state, team: action.payload,
-        oppTeam: state.allTeams.filter((team)=> team != action.payload)[0]
+        oppTeam: state.allTeams.filter((team)=> team !== action.payload)[0]
       }
     default:
       return state

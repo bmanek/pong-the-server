@@ -1,7 +1,11 @@
 import React from 'react'
 import TeamField from './TeamField'
 
-const BigView = () => {
+import { connect } from 'react-redux'
+
+
+const BigView = (props) => {
+  console.log(props, "from BigView")
   return(
     <React.Fragment>
       <br />
@@ -22,4 +26,11 @@ const BigView = () => {
   )
 }
 
-export default BigView
+const mapStateToProps = (state, ownProps) => {
+  return {
+    team: state.team,
+    oppTeam: state.oppTeam
+  }
+}
+
+export default connect(null, mapStateToProps)(BigView)
